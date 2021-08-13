@@ -26,12 +26,15 @@ import { CounterContext } from '../context';
 //   );
 // }
 export default class Test1 extends React.Component {
+  // incrementFromTest1 = () => {
+  //   this.context.increment();
+  // };
   static ContextType = CounterContext;
   render() {
     return (
       <>
         <h1>Hello Test1!</h1>
-        <p>count ={context.count}</p>
+        <p>count ={this.context.count}</p>
         <button onClick={this.context.increment}>Increment Test 1</button>
         <br />
         <br />
